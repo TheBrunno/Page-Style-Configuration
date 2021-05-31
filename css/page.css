@@ -1,0 +1,28 @@
+:root{
+    --mainColor: #68cf49;
+    --textSizeNav: 20px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    background-color: var(--mainColor);
+}
+nav ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+nav ul li a{
+    display:block;
+    padding: 15px;
+    font-size: var(--textSizeNav);
+    color: inherit;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    background-color: #0000001c;
+}
