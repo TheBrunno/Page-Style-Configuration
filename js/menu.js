@@ -5,10 +5,12 @@ function click(element){
     while(true){
         if(clicked == undefined){ // if the element is not clicked
             element.style.backgroundColor = '#0000003a'
+            element.style.fontWeight = 500
             clicked = element
             break
         }else{ // if it is clicked, clears the markup
             clicked.style.backgroundColor = 'inherit'
+            clicked.style.fontWeight = 'normal'
             clicked = undefined
         }        
     }
