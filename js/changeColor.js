@@ -3,13 +3,20 @@ const button = document.querySelector('#button')
 let colorMain = document.querySelector('#mainColor').value = '#6adec9'
 let colorTitle = document.querySelector('#titleColor').value = '#5f1516'
 
+function adjustContrast(variable, color){
+    numb = color.replace('#', '').split('')
+    let value;
+    let rgb=[parseInt(numb[1]+numb[2], 16), parseInt(numb[3]+numb[4], 16), parseInt(numb[5]+numb[6], 16)];
+    (((rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000) > 128) ? value='#000': value='#fff'
+    root.style.setProperty(variable, value)
+}
 function checkNumber(value){
     let numbers = [1,2,3,4,5,6,7,8,9,0]
     let equal = false
-    for(n in value){
+    for(n of value){
         equal = false
-        for(number in numbers){
-            if(numbers[number] == value[n]){
+        for(number of numbers){
+            if(number == n){
                 equal = true
                 break
             }
@@ -17,8 +24,7 @@ function checkNumber(value){
         if(equal == false){
             return false
         }
-    }
-    return true
+    }return true
 }
 function error(msg, local){
     local.value = ''
@@ -36,7 +42,8 @@ function starter(){
 function changeValue(local, variable, type){
     let value = local.value
     if(type == 'color'){
-        root.style.setProperty('--'+variable, value)        
+        variable == 'mainColor' ? adjustContrast('--colorText', value) : value = value
+        root.style.setProperty('--'+variable, value)
     }else if(type == 'text'){
         if(value !== ''){
             if(value > 35){
