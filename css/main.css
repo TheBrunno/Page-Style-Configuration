@@ -1,0 +1,35 @@
+.line{
+    font-size: var(--textSizeMain);
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.line section ol li{
+    font-family: acuta,serif;
+    font-weight: 400;
+    font-size: calc(var(--textSizeMain) + 5px);
+}
+.one section:first-child{
+    text-align: justify;
+    width: 55%;
+}
+p{
+    margin: 20px 0;
+}
+.one section p::first-letter{
+    font-size: calc(var(--textSizeMain) + 15px);
+}
+.two h2{
+    font-family: 'Zilla Slab', serif;
+    font-size: var(--textSizeMainTitle);
+    color: var(--titleColor);
+    text-align: center;
+}
+.two .benefits{
+    font-family: 'acuta', sans-serif;
+    font-size: calc(var(--textSizeMain) + 5px);
+    margin: 0 auto;
+    width: 60%;
+    text-align: justify;
+}

@@ -1,0 +1,13 @@
+footer{
+    margin-top: 150px;
+    height: 200px;
+    width: 100%;
+    background-color: var(--mainColor);
+}
+footer a{
+    display: block;
+    padding: 20px;
+    font-size: var(--textSizeMain);
+    text-decoration: none;
+    color: black;
+}

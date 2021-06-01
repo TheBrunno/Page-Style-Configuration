@@ -1,11 +1,9 @@
-:root{
-    --mainColor: #68cf49;
-    --textSizeNav: 20px;
-}
 body{
     font-family: 'Quicksand', sans-serif;
 }
 nav{
+    position: fixed;
+    width: 100%;
     background-color: var(--mainColor);
 }
 nav ul{
@@ -24,5 +22,5 @@ nav ul li a{
     transition: 0.5s;
 }
 nav ul li a:hover{
-    background-color: #0000001c;
+    background-color: #5f151611;
 }

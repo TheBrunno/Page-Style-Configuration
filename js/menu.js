@@ -4,7 +4,7 @@ let clicked;
 function click(element){
     while(true){
         if(clicked == undefined){ // if the element is not clicked
-            element.style.backgroundColor = '#0000003a'
+            element.style.backgroundColor = '#5f151621'
             element.style.fontWeight = 500
             clicked = element
             break
