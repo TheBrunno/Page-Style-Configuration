@@ -1,0 +1,36 @@
+label{
+    font-size: 22px;
+}
+form{
+    background-color: #eeeeee;
+    padding: 20px;
+}
+form input[type="button"]{
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    transition: .5s;
+}
+form input[type="text"]{
+    width: 100px;
+    text-align: center;
+    font-size: 22px;
+}
+form input[type="color"]{
+    background-color: inherit;
+    border: none;
+    width: 20px;
+}
+form input[type="button"]:hover{
+    filter: brightness(90%);
+    border: none
+}
+#title-chage-color{
+    transition: var(--time);
+    font-size: 42px;
+    margin-bottom: 20px;
+}

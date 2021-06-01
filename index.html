@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>Style Page - Configuration</title>
 </head>
 <body>
@@ -53,14 +54,14 @@
                 </figure>
             </section>
         </div>
-        <div class="two">
+        <h2 class="title-benefits">
+            Beneficios do café
+        </h2>
+        <div class="line two">
             <section>
-                <h2>
-                    Beneficios do café
-                </h2>
                 <ol class="benefits">
                     <li>
-                        Ele te deixa inteligente
+                        Ele te deixa mais inteligente
                     </li>
                     <li>
                         Ajuda a queimar gordura e melhora o desempenho físico
@@ -88,6 +89,20 @@
                     </li>
                 </ol>
             </section>
+            <section>
+                <form autocomplete="off" onsubmit="return false">
+                    <h2 id="title-chage-color">Change Color</h2>
+                    <label>Main Color:</label>
+                    <input type="color" id="mainColor">
+                    <br>
+                    <label>Title Color:</label>
+                    <input type="color" id='titleColor'>
+                    <br>
+                    <label>Text Size:</label>
+                    <input type="text" id="textSize"><label>px</label>
+                    <input type="button" value="Confirm" id="button">
+                </form>
+            </section>
         </div>
     </main>
     <footer>
@@ -95,5 +110,6 @@
         <a href='https://br.freepik.com/vetores/alimento'>Alimento vetor criado por coolvector - br.freepik.com</a>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/changeColor.js"></script>
 </body>
 </html>

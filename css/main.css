@@ -20,16 +20,22 @@ p{
 .one section p::first-letter{
     font-size: calc(var(--textSizeMain) + 15px);
 }
-.two h2{
+h2{
     font-family: 'Zilla Slab', serif;
-    font-size: var(--textSizeMainTitle);
+    font-size: calc(var(--textSizeTitle) - 10px);
     color: var(--titleColor);
     text-align: center;
+    transition: var(--time);
+}
+h2.title-benefits{
+    text-align: left;
+    margin: 0 0 0 20px;
 }
 .two .benefits{
     font-family: 'acuta', sans-serif;
     font-size: calc(var(--textSizeMain) + 5px);
     margin: 0 auto;
-    width: 60%;
-    text-align: justify;
+}
+.two section:last-child{
+    width: 30%;
 }

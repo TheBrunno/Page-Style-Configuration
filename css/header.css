@@ -6,4 +6,5 @@ header h1{
     font-family: 'Zilla Slab', serif;
     font-size: var(--textSizeTitle);
     color: var(--titleColor);
+    transition: var(--time);
 }
