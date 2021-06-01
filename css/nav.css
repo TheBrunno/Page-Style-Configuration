@@ -21,6 +21,7 @@ nav ul li a{
     color: inherit;
     text-decoration: none;
     transition: 0.5s;
+    color: var(--colorText);
 }
 nav ul li a:hover{
     background-color: #5f151611;

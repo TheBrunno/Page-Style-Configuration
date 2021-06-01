@@ -10,5 +10,5 @@ footer a{
     padding: 20px;
     font-size: var(--textSizeMain);
     text-decoration: none;
-    color: black;
+    color: var(--colorText);
 }

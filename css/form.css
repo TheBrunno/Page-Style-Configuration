@@ -12,6 +12,7 @@ form input[type="button"]{
     margin: 10px auto;
     border: none;
     background-color: var(--mainColor);
+    color: var(--colorText);
     border-radius: 5px;
     transition: .5s;
 }
